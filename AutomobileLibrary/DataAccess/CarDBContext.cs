@@ -102,7 +102,7 @@ namespace AutomobileLibrary.DataAccess
                     string SQLInsert = "Insert Cars values(@CarID, @CarName, @Manufacturer, @Price, @ReleasedYear)";
                     var parameters = new List<SqlParameter>();
                     parameters.Add(dataProvider.CreateParameter("@CarID", 4, car.CarID, DbType.Int32));
-                    parameters.Add(dataProvider.CreateParameter("@CarName", 50, car.Manufacturer, DbType.String));
+                    parameters.Add(dataProvider.CreateParameter("@CarName", 50, car.CarName, DbType.String));
                     parameters.Add(dataProvider.CreateParameter("@Manufacturer", 50, car.Manufacturer, DbType.String));
                     parameters.Add(dataProvider.CreateParameter("@Price", 50, car.Price, DbType.Decimal));
                     parameters.Add(dataProvider.CreateParameter("@ReleasedYear", 4, car.ReleasedYear, DbType.Int32));

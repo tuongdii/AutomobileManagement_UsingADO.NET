@@ -43,10 +43,12 @@ namespace AutomobileForm
                 if (InsertOrUpdate == false)
                 {
                     CarRepository.AddNew(car);
+                    MessageBox.Show("Add successfully!");
                 }
                 else
                 {
                     CarRepository.Update(car);
+                    MessageBox.Show("Update successfully!");
                 }
             }
             catch (Exception ex)
